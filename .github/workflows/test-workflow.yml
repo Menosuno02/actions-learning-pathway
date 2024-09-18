@@ -1,0 +1,9 @@
+name: test-workflow
+on: push
+jobs:
+  my-job:
+    # Importing a reusable workflow from another repository and branch
+    uses: Menosuno02/actions-learning-pathway/.github/workflows/build-test-deploy.yml@main
+    # Passing 'node-version' as an input parameter to the reusable workflow
+    with:
+      node-version: '18.x'
