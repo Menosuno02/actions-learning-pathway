@@ -1,0 +1,30 @@
+# Concurrency
+# Prioriza workflows sobre otros, 
+# cancel-in progress cancela otros workflows en progreso en el mismo grupo
+#concurrency: 
+#  group: 'my-concurrency-group'
+#  cancel-in-progress: true
+
+# Condiciones
+#jobs:
+#  build:
+#    if: github.repository == 'docs-internal' || github.repository == 'GitHub-docs'
+#    if: secrets.ENVIRONMENT == 'production'
+
+# Scripts
+#- name: Execute custom script
+#  run: ./path/to/your/script.sh
+
+#name: 'Hello World JS Action'
+#description: 'Greet someone and record the time'
+#  inputs:
+#    who-to-greet:
+#      description: 'Who to greet'
+#      required: true
+#      default: 'World'
+#  outputs:
+#    time:
+#      description: 'The time we greeted you'
+#  runs:
+#    using: 'node16'
+#    main: 'index.js'
